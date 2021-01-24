@@ -1,0 +1,10 @@
+export const LOGIN = "LOGIN";
+export const LOGOUT = "LOGOUT";
+export const LOADING = "LOADING";
+export const SIGNUP = "SIGNUP";
+export const ADMIN = "ADMIN";
+export const BUYER = "BUYER";
+export const SELLER = "SELLER";
+export const PROPERTY_ERROR = "PROPERTY_ERROR";
+export const PROPERTY_SUCCESS = "PROPERTY_SUCCESS";
+export const ALL_PROPERTY_SUCCESS = "ALL_PROPERTY_SUCCESS";

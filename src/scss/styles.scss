@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.login-signup-card, .user-card-section {
+  margin-bottom: 3%;
+  max-width: 500px;
+  width: 80%;
+  margin: 3% auto;
+}
+
+.add-property {
+  &-container {
+    margin: 3rem auto;
+    width: 80%;
+    max-width: 1000px;
+    margin-bottom: 5rem;
+
+    h2 {
+      display: block;
+      text-align: start;
+      margin-bottom: 1rem;
+    }
+  }
+  &-form{
+    text-align: start;
+  }
+}
+
+.search-property {
+  &-banner {
+    text-align: start;
+  }
+}
+
+.user-card-section {
+  text-align: start;
+  margin-bottom: 4rem;
+  &-card {
+    margin-bottom: 1rem;
+  }
+   
+  &-property, &-card-header   {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-property {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+}
+
+.property-card {
+  text-align: start;
+}
+
+.mb-50 {
+  margin-bottom: 5rem; 
+}
+
+#custom-login-form {
+  text-align: start;
+}
