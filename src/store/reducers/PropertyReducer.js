@@ -8,7 +8,8 @@ export const initState = {
   allProperties: null
 };
 
-const UserReducer = (state, action) => {
+const PropertyReducer= (state, action) => {
+  console.log(state)
   switch (action.type) {
     case actionTypes.LOADING:
       return {
@@ -27,4 +28,4 @@ const UserReducer = (state, action) => {
   }
 };
 
-export default UserReducer;
+export default PropertyReducer;

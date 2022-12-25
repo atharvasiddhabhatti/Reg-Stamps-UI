@@ -1,0 +1,185 @@
+{
+"papers" : [{
+        "id":0,
+        "college":"NA",
+        "university":"SGBAU",
+        "year":2,
+        "semester":4,
+        "session":"Summer 2022",
+        "subject":"EVS",
+        "file":"https://drive.google.com/file/d/1sk4Jk2Tpb2Q_r7PkDTAECHwzu27He_Lg/view?usp=sharing",
+        "Branch":"All Branch",
+        "type":"End Sem"
+      },
+      {
+        "id":1,
+        "college":"NA",
+        "university":"SGBAU",
+        "year":3,
+        "semester":5,
+        "session":"Summer 2022",
+        "subject":"TOC",
+        "file":"https://drive.google.com/file/d/1BhffUiV1ivbbn0OZHLcv3afB-WHgMxZi/view?usp=sharing",
+        "Branch":"CSE",
+        "type":"End Sem"
+      },
+      {
+        "id": 2,
+        "college": "Sipna College of Engineering and Technology,Amravati",
+        "university": "SGBAU",
+        "year": 4,
+        "semester": 8,
+        "session": "Session 2021-22",
+        "subject": "Embedded Systems-1",
+        "file": "https://drive.google.com/file/d/1yhvcwOiBJen5hnkXu_NLxIqI_g_EuQB6/view?usp=sharing",
+        "Branch":"CSE",
+        "type":"Sessional"
+      },
+      {
+        "id": 3,
+        "college": "Sipna College of Engineering and Technology,Amravati",
+        "university": "SGBAU",
+        "year": 4,
+        "semester": 8,
+        "session": "Session 2021-22",
+        "subject": "Embedded Systems-2",
+        "file": "https://drive.google.com/file/d/1YMfCiUkIpNs2FI2tWC2uxcfJ6FevIvyG/view?usp=sharing",
+        "Branch":"CSE",
+        "type":"Sessional"
+      },
+      {
+        "id": 4,
+        "college": "Sipna College of Engineering and Technology,Amravati",
+        "university": "SGBAU",
+        "year": 4,
+        "semester": 8,
+        "session": "Session 2021-22",
+        "subject": "Network Security",
+        "file": "https://drive.google.com/file/d/1ClrhVikj2PdzUpPsZh5cnkgui3Rn7zmI/view?usp=sharing",
+        "Branch":"CSE",
+        "type":"Sessional"
+      },
+      {
+        "id": 5,
+        "college": "Sipna College of Engineering and Technology,Amravati",
+        "university": "SGBAU",
+        "year": 3,
+        "semester": 5,
+        "session": "Session 2021-22",
+        "subject": "Software Engineering",
+        "file": "https://drive.google.com/file/d/1twOUwA654Jqo05wErWYxABo8C5sv-Chf/view?usp=sharing",
+        "Branch":"CSE",
+        "type":"Sessional"
+      },
+      {
+        "id": 6,
+        "college": "Sipna College of Engineering and Technology,Amravati",
+        "university": "SGBAU",
+        "year": 2,
+        "semester": 4,
+        "session": "Session 2021-22",
+        "subject": "COA",
+        "file": "https://drive.google.com/file/d/1r_SehkkxxikpP6Bzs2vP5nC8NslcL3Nx/view?usp=sharing",
+        "Branch":"IT",
+        "type":"Sessional"
+      },
+      {
+        "id": 7,
+        "college": "Sipna College of Engineering and Technology,Amravati",
+        "university": "SGBAU",
+        "year": 2,
+        "semester": 4,
+        "session": "Session 2021-22",
+        "subject": "Data Communication",
+        "file": "https://drive.google.com/file/d/1mspJVfuwODDSexvoVUFJ2zke5PjicNhn/view?usp=sharing",
+        "Branch":"IT",
+        "type":"Sessional"
+      },
+      {
+        "id":8,
+        "college":"NA",
+        "university":"SGBAU",
+        "year":3,
+        "semester":5,
+        "session":"Summer 2022",
+        "subject":"TOC",
+        "file":"https://drive.google.com/file/d/1BhffUiV1ivbbn0OZHLcv3afB-WHgMxZi/view?usp=sharing",
+        "Branch":"IT",
+        "type":"End Sem"
+      },
+      {
+        "id":9,
+        "college":"NA",
+        "university":"SGBAU",
+        "year":2,
+        "semester":4,
+        "session":"Winter 2018",
+        "subject":"CAO",
+        "file":"https://drive.google.com/file/d/1S1srJpa4R_zrl_UDd6MtN00t0xVXiff_/view?usp=sharing",
+        "Branch":"IT",
+        "type":"End Sem"
+      },
+      {
+        "id":10,
+        "college":"NA",
+        "university":"SGBAU",
+        "year":2,
+        "semester":4,
+        "session":"Summer 2017",
+        "subject":"OS",
+        "file":"https://drive.google.com/file/d/1Y38ZobHrPvuZdwR8AKSSNb9DrY9N97La/view?usp=sharing",
+        "Branch":"IT",
+        "type":"End Sem"
+      },
+      {
+        "id":11,
+        "college":"NA",
+        "university":"SGBAU",
+        "year":2,
+        "semester":4,
+        "session":"Summer 2018",
+        "subject":"OS",
+        "file":"https://drive.google.com/file/d/17BARnldOBUKB1kflghCOIAJ0uSiqt5QQ/view?usp=sharing",
+        "Branch":"IT",
+        "type":"End Sem"
+      },
+      {
+        "id":12,
+        "college":"NA",
+        "university":"SGBAU",
+        "year":2,
+        "semester":4,
+        "session":"Winter 2016",
+        "subject":"OS",
+        "file":"https://drive.google.com/file/d/16o0XvG0TXbciKUifL_XNyORaALxvMOmp/view?usp=sharing",
+        "Branch":"IT",
+        "type":"End Sem"
+      },
+      {
+        "id":13,
+        "college":"NA",
+        "university":"Mumbai University",
+        "year":3,
+        "semester":5,
+        "session":"Winter 2022",
+        "subject":"VLSI",
+        "file":"https://drive.google.com/file/d/1KY_X_eEW23m4HkUNAzpKgmQHYMOvYuTE/view?usp=share_link",
+        "Branch":"EXTC",
+        "type":"End Sem"
+      },
+      {
+        "id":14,
+        "college":"Vidyalankar Institute Of Technology, Mumbai",
+        "university":"Mumbai University",
+        "year":3,
+        "semester":5,
+        "session":"Winter 2022",
+        "subject":"Data Communication",
+        "file":"https://drive.google.com/file/d/1eLCM0cEfxyPNWz9GlNROz2HBbclOmw7x/view?usp=share_link",
+        "Branch":"EXTC",
+        "type":"Sessional"
+      }
+
+
+	  ]
+}

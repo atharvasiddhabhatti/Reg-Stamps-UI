@@ -8,7 +8,7 @@ import UserModal from "../components/modal/userModal";
 import SearchProperty from "../components/search-property/searchProperty";
 import AuthContext from "../store/context/AuthContext";
 import Auth from "./auth/auth";
-import Dashboard from "./dashbaord/dashbaord";
+import blog from "./dashbaord/blog";
 
 const MainContainer = React.memo((props) => {
   const userContext = useContext(AuthContext);
@@ -27,24 +27,25 @@ const MainContainer = React.memo((props) => {
     <div className="App" styles={appStyles}>
       <Router>
         <Switch>
-          <Route path="/" exact component={Dashboard} />
-          <Route path="/dashboard" component={Dashboard} />
-          <Route path="/login" component={Auth} />
-          <Route path="/signup" component={Auth} />
-          <Route path="/user/:username" component={UserModal} />
-          {isAuth ? (
+          <Route path="/" exact component={SearchProperty} />
+          <Route path="/Dashboard" component={SearchProperty} />
+          <Route path="/blog" component={blog} />
+          <Route path="/Request" component={blog} />
+          {/* <Route path="/login" component={Auth} />
+          <Route path="/signup" component={Auth} /> */}
+          {/* {isAuth ? (
             <React.Fragment>
               <Route path="/add-property" component={AddProperty} />
               <Route path="/search-property" component={SearchProperty} />
               <Route path="/property/:name" component={PropertyModal} />
               <Route path="/sent-for-approval" component={ApprovedModal} />
             </React.Fragment>
-          ) : null}
+          ) : null} */}
           <Route path="/error" component={UserModal} />
-          <Route path="/**" exact component={Dashboard} />
+          <Route path="/**" exact component={SearchProperty} />
         </Switch>
       </Router>
-      <Footer />
+      
     </div>
   );
 });

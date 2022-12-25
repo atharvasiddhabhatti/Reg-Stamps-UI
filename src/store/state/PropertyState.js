@@ -8,15 +8,14 @@ import PropertyContext from "../context/PropertyContext";
 const PropertyState = (props) => {
   const [propertyState, dispatch] = useReducer(PropertyReducer, initState);
 
-  const getPropertyByNumber = useCallback((value) => {
+  const getPaperDetails = useCallback((value) => {
     dispatch({ type: actionTypes.LOADING });
 
     baseAxios({
       method: "GET",
-      url: `/users/property/${value}`,
+      url: `/data.json`,
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
       }
     })
       .then((res) => {
@@ -34,6 +33,7 @@ const PropertyState = (props) => {
         dispatch({ type: actionTypes.PROPERTY_ERROR, property });
       });
   });
+  
 
   const patchProperty = useCallback((property) => {
     dispatch({ type: actionTypes.LOADING });
@@ -62,31 +62,30 @@ const PropertyState = (props) => {
       });
   }, []);
 
-  const getPropertyByUsername = useCallback((username) => {
+  const getPropertyByUsername = useCallback((college,university,year,semester) => {
     dispatch({ type: actionTypes.LOADING });
     baseAxios({
       method: "GET",
-      url: `/users/property/user/${username}`,
+      url: `/getPaperDetails?college=${college}&university=${university}&year=${year}&semester=${semester}`,
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token")
       }
     })
-      .then((res) => {
-        let property = {};
-        property.loading = false;
-        property.error = false;
-        property.properties = res.data;
-        dispatch({ type: actionTypes.PROPERTY_SUCCESS, property });
-      })
-      .catch((err) => {
-        let property = {};
-        property.loading = false;
-        property.error = true;
-        property.properties = null;
-        dispatch({ type: actionTypes.PROPERTY_ERROR, property });
-      });
-  }, []);
+    .then((res) => {
+      let property = {};
+      property.loading = false;
+      property.error = false;
+      property.searched = { ...res.data };
+      dispatch({ type: actionTypes.PROPERTY_SUCCESS, property });
+    })
+    .catch((err) => {
+      let property = {};
+      property.loading = false;
+      property.error = true;
+      property.properties = null;
+      dispatch({ type: actionTypes.PROPERTY_ERROR, property });
+    });
+  });
 
   const postProperty = useCallback((propertyDTO) => {
     dispatch({ type: actionTypes.LOADING });
@@ -120,7 +119,7 @@ const PropertyState = (props) => {
         propertyState: propertyState,
         getPropertyByUsername: getPropertyByUsername,
         patchProperty: patchProperty,
-        getPropertyByNumber: getPropertyByNumber
+        getPaperDetails: getPaperDetails
       }}
     >
       {props.children}

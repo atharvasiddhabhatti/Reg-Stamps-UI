@@ -5,7 +5,7 @@ const PropertyContext = React.createContext({
   postProperty: (property) => {},
   getPropertyByUsername: () => {},
   patchProperty: () => {},
-  getPropertyByNumber: () => {}
+  getPaperDetails: () => {}
 });
 
 export default PropertyContext;

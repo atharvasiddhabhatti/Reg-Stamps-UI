@@ -245,7 +245,7 @@ const PropertyModal = (props) => {
     </Spinner>
   );
 
-  if (property) {
+  if (!property) {
     content = (
       <Form
         // noValidate

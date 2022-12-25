@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Button, ButtonGroup, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import AuthContext from "../../store/context/AuthContext";
+import Logo from "./Ehc_Logo.png";
 
 const Header = (props) => {
   const handleAuthClick = (value) => {
@@ -20,50 +21,65 @@ const Header = (props) => {
       setUsername(userState.username);
   }, [userState, userState && userState.error, userState && userState.isAuth]);
 
-  let auth = (
-    <ButtonGroup aria-label="Auth Buttons" size="sm">
-      <Button
-        variant="primary"
-        onClick={(event) => {
-          handleAuthClick("login");
-        }}
-      >
-        Log In
-      </Button>
-      <Button
-        variant="primary"
-        onClick={(event) => {
-          handleAuthClick("signup");
-        }}
-      >
-        Sign Up
-      </Button>
-    </ButtonGroup>
-  );
+  // let auth = (
+  //   <ButtonGroup aria-label="Auth Buttons" size="sm">
+  //     <Button
+  //       variant="primary"
+  //       onClick={(event) => {
+  //         handleAuthClick("login");
+  //       }}
+  //     >
+  //       Log In
+  //     </Button>
+  //     <Button
+  //       variant="primary"
+  //       onClick={(event) => {
+  //         handleAuthClick("signup");
+  //       }}
+  //     >
+  //       Sign Up
+  //     </Button>
+  //   </ButtonGroup>
+  // );
 
-  if (username !== "") {
-    auth = (
-      <Button
-        variant="primary"
-        onClick={(event) => {
-          handleAuthClick("logout");
-        }}
-      >
-        Log Out
-      </Button>
-    );
-  }
+  // if (username !== "") {
+  //   auth = (
+  //     <Button
+  //       variant="primary"
+  //       onClick={(event) => {
+  //         handleAuthClick("logout");
+  //       }}
+  //     >
+  //       Log Out
+  //     </Button>
+  //   );
+  // }
   return (
     <header>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Navbar.Brand href="#home">Stamp Registration</Navbar.Brand>
+        <Navbar.Brand>
+        <img
+              alt="EHC Logo"
+              src={Logo}
+              width="40"
+              height="40"
+              className="d-inline-block align-top"
+            />{' '}
+          Exam Helper Club
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto" defaultActiveKey="/">
             <Nav.Link as={NavLink} to="/">
-              Dashboard
+              Paper Finder
             </Nav.Link>
-            {username !== "" ? (
+             <Nav.Link as={NavLink} to="/blog">
+              Blog
+            </Nav.Link>
+            {/* <Nav.Link as={NavLink} to="/request">
+              Request
+            </Nav.Link>  */}
+            {/* {username !== "" ? (
               <React.Fragment>
                 <Nav.Link as={NavLink} to="/add-property">
                   Add Property
@@ -72,9 +88,8 @@ const Header = (props) => {
                   Search Property
                 </Nav.Link>
               </React.Fragment>
-            ) : null}
+            ) : null} */}
           </Nav>
-          {auth}
         </Navbar.Collapse>
       </Navbar>
     </header>
